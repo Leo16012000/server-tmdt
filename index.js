@@ -196,13 +196,13 @@ app.get("/vnpay_ipn", function (req, res, next) {
     }
 });
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 const db = mysql.createPool({
     host: "localhost",
-    user: "id17240571_team",
-    password: "I6{Y_fWG]mH0iC[n",
-    database: "id17240571_home_funishings",
+    user: "root",
+    password: "123456",
+    database: "tmdt_ass2004",
 });
 
 app.use(cors());
